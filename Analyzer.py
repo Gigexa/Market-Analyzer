@@ -69,8 +69,8 @@ def displayStockData(symbol):
             
 
 class EMA:
-'''
-#the section is commented out because firstly it was one file scrypt, will leave it here if it will be useful
+    '''
+    #the section is commented out because firstly it was one file scrypt, will leave it here if it will be useful
     def __init__(self,symbol):
         self.symbol = symbol
         ticker = yf.Ticker(symbol)
@@ -103,7 +103,7 @@ class EMA:
                     
             currentPrice = data.iloc[-1,3]
             #self.calculateEMA(data,currentPrice,changeInPercent)
-'''
+    '''
 
     def calculateEMA(data,currentPrice,changeInPercent):
         #We define variables that will be used globally, tried many ways, this way worked best for now
